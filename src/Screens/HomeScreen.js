@@ -5,10 +5,12 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default function HomeScreen({ navigation }) {
   return (
+
+    
     <ScrollView style={styles.container}>
       {/* Imagem Principal (Substitua a URL pela sua imagem local) */}
       <Image 
-        source={{ uri: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e' }} 
+        source={{ uri: 'https://i.pinimg.com/736x/e1/22/35/e122354fe2928ef9915ca9ac61ebc74e.jpg' }} 
         style={styles.heroImage} 
         resizeMode="cover"
       />
@@ -19,19 +21,19 @@ export default function HomeScreen({ navigation }) {
 
       {/* Ícones de Navegação Inferiores */}
       <View style={styles.iconRow}>
-        <TouchableOpacity style={styles.iconButton}>
+        <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Sobre')}>
           <Ionicons name="boat-outline" size={32} color="#112D4E" />
-          <Text style={styles.iconText}>PASSEIOS NA CALDEIRA</Text>
+          <Text style={styles.iconText}>SOBRE</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Restaurantes')}>
+        <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Pontos Turísticos')}>
           <Ionicons name="camera-outline" size={32} color="#112D4E" />
           <Text style={styles.iconText}>PONTOS TURÍSTICOS</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.iconButton}>
+        <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Restaurantes')}>
           <Ionicons name="restaurant-outline" size={32} color="#112D4E" />
-          <Text style={styles.iconText}>PRAIAS E RESTAURANTES</Text>
+          <Text style={styles.iconText}>RESTAURANTES</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
@@ -44,14 +46,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   heroImage: {
-    width: '90%',
+    width: '75%',
     height: 400,
     alignSelf: 'center',
     marginTop: 20,
     borderRadius: 10,
   },
   exploreBanner: {
-    backgroundColor: '#5C82A6',
+    backgroundColor: '#466a8b',
     marginHorizontal: '5%',
     marginTop: 20,
     padding: 10,
