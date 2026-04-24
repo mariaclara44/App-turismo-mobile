@@ -6,10 +6,10 @@ import { View, Text, StyleSheet, FlatList } from 'react-native';
 import Card from '../components/Card'; 
 
 const DATA = [
-  { id: '1', title: 'AMOUDI BAY', image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5f1' },
-  { id: '2', title: 'THE PENGUIN HOUSE', image: 'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a' },
-  { id: '3', title: 'SUNSET TAVERNA', image: 'https://images.unsplash.com/photo-1516483638261-f40af5ff1f25' },
-  { id: '4', title: 'FIRA RESTAURANT', image: 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca' },
+  { id: '1', title: 'ANDRONIS LYCABETTUS', image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5f1' },
+  { id: '2', title: 'THE ATHENIAN HOUSE', image: 'https://i.pinimg.com/1200x/34/7b/93/347b93b4fcc826a4325f3a97a45eff63.jpg' },
+  { id: '3', title: 'BEEFBAR SANTORINI', image: 'https://i.pinimg.com/1200x/3a/93/e1/3a93e170828d37b8d1f0ebfa5a9b98d0.jpg' },
+  { id: '4', title: 'FIVES SENSES RESTAURANT', image: 'https://i.pinimg.com/736x/9a/d4/a3/9ad4a3e2acaa62b6b8c7cf80f4f6f325.jpg' },
 ];
 
 export default function ListScreen({ navigation }) {
